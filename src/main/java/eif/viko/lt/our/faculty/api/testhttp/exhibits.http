@@ -1,0 +1,29 @@
+# curl -X 'GET'
+#  'http://localhost:8080/api'
+#  -H 'accept: */*'
+GET http://localhost:8080/api
+accept: */*
+
+###
+# curl -X 'POST'
+#  'http://localhost:8080/api'
+#  -H 'accept: */*'
+#  -H 'Content-Type: application/json'
+#  -d '{
+#  "title": "Naujas irašas",
+#  "description": "New record",
+#  "imageUrl": "http://eif.viko.lt"
+#}'
+POST http://localhost:8080/api
+accept: */*
+Content-Type: application/json
+
+{
+  "title": "lecture",
+  "description": "New record",
+  "imageUrl": "http://eif.viko.lt"
+}
+
+###
+
+
